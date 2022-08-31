@@ -1,0 +1,244 @@
+body {
+  margin: 0;
+  background-color: #fff;
+  font-family: "Lato";
+  font-size: var(--sFontBody);
+  letter-spacing: 0.03em;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.container {
+  width: 100%;
+  max-width: 1060px;
+  padding: 0 160px;
+  margin: 0 auto;
+}
+
+:root {
+  --cWhite: #ffffff;
+  --cBlack: #1B1B1B;
+  --cGray: #585858;
+  --cCadetBlue: #00B3B3;
+  --cLightGray: #F9F9F9;
+  --sFontBody: 16px;
+}
+
+.header {
+  display: block;
+}
+
+.header__title {
+  border: 1px solid #ebebeb;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .label {
+    padding: 20px 0;
+  }
+}
+@media screen and (min-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
+  .main__intro {
+    margin: 25px 30px 25px;
+  }
+}
+.main__intro {
+  display: block;
+  font-style: normal;
+  color: var(--cBlack);
+  justify-content: center;
+}
+
+.main__intro_text {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 35px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+}
+
+.main__intro_subtext {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.main__intro_img {
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}
+
+.table {
+  align-items: center;
+  text-align: center;
+  display: block;
+}
+
+.table__title {
+  background-color: var(--cCadetBlue);
+  color: var(--cWhite);
+  font-style: normal;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 34px;
+  align-items: center;
+  text-align: center;
+}
+
+.table__row {
+  justify-content: center;
+  align-items: center;
+  padding: 35px 0;
+}
+
+.bg--color {
+  background-color: var(--cLightGray);
+}
+
+.table__labels {
+  flex-direction: column;
+  display: block;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.table__content_text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+  color: var(--cGray);
+  margin: 25px 0;
+}
+
+.table__labels_rating {
+  padding-top: 25px;
+}
+
+.table__content_categories {
+  color: var(--cCadetBlue);
+  display: inline-flex;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 19px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  padding: 0 35px 0 35px;
+}
+
+.table__content_categories h6 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--cGray);
+}
+
+.table__action {
+  align-items: center;
+  justify-content: center;
+}
+
+.button {
+  background: #ffc400;
+  border: 2px solid #ffc400;
+  margin: 15px 70px 0 70px;
+  padding: 15px 40px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  display: block;
+  letter-spacing: 0.06em;
+  color: var(--cWhite);
+}
+
+@media screen and (min-width: 375px) {
+  .table__title h3 {
+    padding: 20px 0;
+  }
+}
+.footer {
+  background-color: var(--cLightGray);
+}
+
+.footer__content {
+  display: block;
+  padding: 40px 0 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer_content_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  color: var(--cBlack);
+}

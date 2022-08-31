@@ -1,0 +1,45 @@
+@media screen and (min-width: 375px) {
+  .container {
+    padding: 0 10px;
+  }
+  .main__intro {
+    margin: 25px 30px 25px;
+  }
+}
+.main__intro {
+  display: block;
+  font-style: normal;
+  color: var(--cBlack);
+  justify-content: center;
+}
+
+.main__intro_text {
+  font-weight: 800;
+  font-size: 36px;
+  line-height: 35px;
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  letter-spacing: 0.06em;
+}
+
+.main__intro_subtext {
+  font-weight: 800;
+  font-size: 14px;
+  line-height: 17px;
+  padding-bottom: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  letter-spacing: 0.03em;
+}
+
+.main__intro_img {
+  max-height: 100%;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+}

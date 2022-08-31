@@ -1,0 +1,15 @@
+.header {
+  display: block;
+}
+
+.header__title {
+  border: 1px solid #ebebeb;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-width: 375px) {
+  .label {
+    padding: 20px 0;
+  }
+}

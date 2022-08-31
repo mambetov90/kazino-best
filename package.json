@@ -1,0 +1,25 @@
+{
+  "name": "kazino-best",
+  "version": "1.0.0",
+  "description": "kazino-best",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --no-source-map --watch .",
+    "prettier": "prettier --write **/**.scss **.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mambetov90/kazino-best.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mambetov90/kazino-best/issues"
+  },
+  "homepage": "https://github.com/mambetov90/kazino-best#readme",
+  "dependencies": {
+    "prettier": "^2.7.1",
+    "sass": "^1.54.7"
+  }
+}

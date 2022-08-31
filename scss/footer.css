@@ -1,0 +1,24 @@
+.footer {
+  background-color: var(--cLightGray);
+}
+
+.footer__content {
+  display: block;
+  padding: 40px 0 25px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer_content_text {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  justify-content: center;
+  color: var(--cBlack);
+}
