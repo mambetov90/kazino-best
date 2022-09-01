@@ -1,5 +1,6 @@
 .header {
   display: block;
+  height: 100%;
 }
 
 .header__title {
@@ -8,8 +9,14 @@
   text-align: center;
 }
 
-@media screen and (min-width: 375px) {
+.label {
+  padding: 20px 0;
+  max-width: 140px;
+}
+
+@media screen and (min-width: 1025px) {
   .label {
-    padding: 20px 0;
+    padding: 37px 0;
+    max-width: 220px;
   }
 }
