@@ -9,15 +9,14 @@
   justify-content: center;
 }
 .footer_content_text {
+  padding: 5px 0 30px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 27px;
+  line-height: 2.2;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   justify-content: center;
-
   color: var(--cBlack);
 }

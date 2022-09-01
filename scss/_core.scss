@@ -1,13 +1,15 @@
 body {
   margin: 0;
-  background-color: #fff;
-  font-family: "Lato";
+  background-color: var(--cWhite);
+  font-family: "Lato", sans-serif;
   font-size: var(--sFontBody);
+  font-style: normal;
   letter-spacing: 0.03em;
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
 }
 
 *,

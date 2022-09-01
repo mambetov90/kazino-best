@@ -2,21 +2,36 @@
   align-items: center;
   text-align: center;
   display: block;
+  color: var(--cWhite);
 }
 .table__title {
   background-color: var(--cCadetBlue);
-  color: var(--cWhite);
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 34px;
+  line-height: 1.8;
   align-items: center;
   text-align: center;
 }
+.table__title h3 {
+  padding: 20px 0;
+}
 .table__row {
+  position: relative;
   justify-content: center;
   align-items: center;
   padding: 35px 0;
+}
+.counter {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  margin: 0 auto;
+  font-weight: 800;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--cGray);
 }
 .bg--color {
   background-color: var(--cLightGray);
@@ -29,15 +44,12 @@
   justify-content: center;
 }
 .table__content_text {
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
+  line-height: 1.2;
+  display: block;
   align-items: center;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.03em;
   color: var(--cGray);
   margin: 25px 0;
 }
@@ -47,32 +59,28 @@
 .table__content_categories {
   color: var(--cCadetBlue);
   display: inline-flex;
-  font-style: normal;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   padding: 0 35px 0 35px;
 }
 .table__content_categories h6 {
-  font-style: normal;
   font-weight: 900;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.5;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--cGray);
 }
 .table__action {
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  display: flex;
 }
 .button {
-  background: #ffc400;
-  border: 2px solid #ffc400;
+  background: var(--cOrange);
+  border: 2px solid var(--cOrange);
   margin: 15px 70px 0 70px;
   padding: 15px 40px;
   border-radius: 7px;
@@ -80,14 +88,7 @@
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
-  line-height: 17px;
-  display: block;
+  line-height: 1;
   letter-spacing: 0.06em;
   color: var(--cWhite);
-}
-
-@media screen and (min-width: 375px) {
-  .table__title h3 {
-    padding: 20px 0;
-  }
 }

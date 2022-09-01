@@ -1,13 +1,15 @@
 body {
   margin: 0;
-  background-color: #fff;
-  font-family: "Lato";
+  background-color: var(--cWhite);
+  font-family: "Lato", sans-serif;
   font-size: var(--sFontBody);
+  font-style: normal;
   letter-spacing: 0.03em;
 }
 
 html {
   scroll-behavior: smooth;
+  font-family: "Lato", sans-serif;
 }
 
 *,
@@ -47,10 +49,11 @@ ol {
 
 :root {
   --cWhite: #ffffff;
-  --cBlack: #1B1B1B;
+  --cBlack: #1b1b1b;
   --cGray: #585858;
-  --cCadetBlue: #00B3B3;
-  --cLightGray: #F9F9F9;
+  --cCadetBlue: #00b3b3;
+  --cLightGray: #f9f9f9;
+  --cOrange: #ffc400;
   --sFontBody: 16px;
 }
 
@@ -119,23 +122,40 @@ ol {
   align-items: center;
   text-align: center;
   display: block;
+  color: var(--cWhite);
 }
 
 .table__title {
   background-color: var(--cCadetBlue);
-  color: var(--cWhite);
-  font-style: normal;
   font-weight: 800;
   font-size: 18px;
-  line-height: 34px;
+  line-height: 1.8;
   align-items: center;
   text-align: center;
 }
 
+.table__title h3 {
+  padding: 20px 0;
+}
+
 .table__row {
+  position: relative;
   justify-content: center;
   align-items: center;
   padding: 35px 0;
+}
+
+.counter {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  margin: 0 auto;
+  font-weight: 800;
+  line-height: 1.2;
+  display: flex;
+  align-items: center;
+  letter-spacing: 0.06em;
+  color: var(--cGray);
 }
 
 .bg--color {
@@ -151,15 +171,12 @@ ol {
 }
 
 .table__content_text {
-  font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 19px;
-  display: flex;
+  line-height: 1.2;
+  display: block;
   align-items: center;
   text-align: center;
   justify-content: center;
-  letter-spacing: 0.03em;
   color: var(--cGray);
   margin: 25px 0;
 }
@@ -171,35 +188,31 @@ ol {
 .table__content_categories {
   color: var(--cCadetBlue);
   display: inline-flex;
-  font-style: normal;
   font-weight: 800;
-  font-size: 16px;
-  line-height: 19px;
+  line-height: 1.2;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   padding: 0 35px 0 35px;
 }
 
 .table__content_categories h6 {
-  font-style: normal;
   font-weight: 900;
   font-size: 20px;
-  line-height: 24px;
+  line-height: 1.5;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--cGray);
 }
 
 .table__action {
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
+  display: flex;
 }
 
 .button {
-  background: #ffc400;
-  border: 2px solid #ffc400;
+  background: var(--cOrange);
+  border: 2px solid var(--cOrange);
   margin: 15px 70px 0 70px;
   padding: 15px 40px;
   border-radius: 7px;
@@ -207,17 +220,11 @@ ol {
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
-  line-height: 17px;
-  display: block;
+  line-height: 1;
   letter-spacing: 0.06em;
   color: var(--cWhite);
 }
 
-@media screen and (min-width: 375px) {
-  .table__title h3 {
-    padding: 20px 0;
-  }
-}
 .footer {
   background-color: var(--cLightGray);
 }
@@ -231,14 +238,14 @@ ol {
 }
 
 .footer_content_text {
+  padding: 5px 0 30px 0;
   font-style: normal;
   font-weight: 700;
   font-size: 12px;
-  line-height: 27px;
+  line-height: 2.2;
   display: flex;
   align-items: center;
   text-align: center;
-  letter-spacing: 0.03em;
   justify-content: center;
   color: var(--cBlack);
 }
