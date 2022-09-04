@@ -1,7 +1,7 @@
 .container {
   padding: 0 10px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .container {
     max-width: 1160px;
   }
@@ -22,7 +22,7 @@
   align-items: center;
   text-align: center;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .table__title {
     border-radius: 7px;
   }
@@ -31,7 +31,7 @@
 .table__header_mobile {
   padding: 20px 0;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .table__header_mobile {
     display: none;
   }
@@ -40,7 +40,7 @@
 .table__header {
   display: none;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .table__header {
     display: grid;
     grid-template-columns: 60px 185px 323px 90px 60px 175px 245px;
@@ -58,7 +58,7 @@
 .desk {
   display: none;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .desk {
     display: grid;
     grid-template-columns: 60px 185px 323px 90px 60px 175px 245px;
@@ -69,14 +69,15 @@
   }
 }
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .mobile {
     display: none;
   }
 }
 
 .table__row_num {
-  padding: 10px 20px;
+  width: 346px;
+  padding: 10px 20px 0 20px;
   margin: 0 auto;
   font-weight: 800;
   line-height: 1.2;
@@ -85,13 +86,6 @@
   justify-content: left;
   letter-spacing: 0.06em;
   color: var(--cGray);
-}
-@media screen and (min-width: 1025px) {
-  .table__row_num {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
 }
 
 .bg--color {
@@ -106,13 +100,18 @@
   justify-content: center;
   padding-top: 25px;
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .table__rating {
     padding-top: 0;
   }
 }
 
 .table__content_text {
+  margin: 25px 0;
+  color: var(--cGray);
+}
+
+.table__content_text h4 {
   font-weight: 500;
   line-height: 1.2;
   display: block;
@@ -120,12 +119,6 @@
   text-align: center;
   justify-content: center;
   color: var(--cGray);
-  margin: 25px 0;
-}
-@media screen and (min-width: 1025px) {
-  .table__content_text {
-    text-align: left;
-  }
 }
 
 .vip,
@@ -176,11 +169,11 @@
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 0.06em;
   color: var(--cWhite);
 }
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1160px) {
   .button {
     margin: 0;
   }

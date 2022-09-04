@@ -1,6 +1,6 @@
 .container {
   padding: 0 10px;
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     max-width: 1160px;
   }
 }
@@ -17,20 +17,20 @@
   line-height: 1.8;
   align-items: center;
   text-align: center;
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     border-radius: 7px;
   }
 }
 .table__header_mobile {
   padding: 20px 0;
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     display: none;
   }
 }
 .table__header {
   display: none;
 
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     display: grid;
     grid-template-columns: 60px 185px 323px 90px 60px 175px 245px;
     padding: 25px 0;
@@ -44,7 +44,7 @@
 }
 .desk {
   display: none;
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     display: grid;
     grid-template-columns: 60px 185px 323px 90px 60px 175px 245px;
     padding: 25px 0;
@@ -54,12 +54,13 @@
   }
 }
 .mobile {
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     display: none;
   }
 }
 .table__row_num {
-  padding: 10px 20px;
+  width: 346px;
+  padding: 10px 20px 0 20px;
   margin: 0 auto;
   font-weight: 800;
   line-height: 1.2;
@@ -68,12 +69,6 @@
   justify-content: left;
   letter-spacing: 0.06em;
   color: var(--cGray);
-
-  @media screen and (min-width: 1025px) {
-    position: relative;
-    top: 0;
-    left: 0;
-  }
 }
 .bg--color {
   background-color: var(--cLightGray);
@@ -85,11 +80,15 @@
   text-align: center;
   justify-content: center;
   padding-top: 25px;
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     padding-top: 0;
   }
 }
 .table__content_text {
+  margin: 25px 0;
+  color: var(--cGray);
+}
+.table__content_text h4 {
   font-weight: 500;
   line-height: 1.2;
   display: block;
@@ -97,10 +96,6 @@
   text-align: center;
   justify-content: center;
   color: var(--cGray);
-  margin: 25px 0;
-  @media screen and (min-width: 1025px) {
-    text-align: left;
-  }
 }
 .vip,
 .license {
@@ -146,10 +141,10 @@
   font-style: normal;
   font-weight: 800;
   font-size: 14px;
-  line-height: 1;
+  line-height: 1.2;
   letter-spacing: 0.06em;
   color: var(--cWhite);
-  @media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1160px) {
     margin: 0;
   }
 }
