@@ -10,10 +10,10 @@
 .label {
   padding: 20px 0;
   max-width: 140px;
-}
-@media screen and (min-width: 1025px) {
-  .label {
+
+  @media screen and (min-width: 1025px) {
     padding: 37px 0;
     max-width: 220px;
   }
 }
+
